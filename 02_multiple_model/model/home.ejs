@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data display</title>
+</head>
+<body>
+<table border="2px">
+    <thead>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Office Address</th>
+        <th>Home Address</th>
+    </thead>
+    <tbody>
+        <% posts.forEach(post =>{ %>
+    <tr>
+        <td> <% = post.firstName %></td>
+        <td> <% = post.lastName %></td>
+        <td> <% = post.office_address %></td>
+        <td> <% = post.home_address %></td>
+    </tr>
+
+    </tbody>
+</table>
+
+</body>
+</html>
