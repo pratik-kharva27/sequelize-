@@ -12,11 +12,8 @@ app.get('/', async (req, res) => {
 })
 
 const project = await User.findOne({ where: { rollNo: '02' } ,raw:true});
-if (User === null) {
-  console.log('Not found!');
-} else {
-  console.log(project,"sparrow"); // true
-//   console.log(project.title); // 'My Title'
+if (User === null) {console.log('Not found!');} 
+else {console.log(project,"sparrow"); // true
 }
 
 User.update({fistName:'PRATIK'},{where:{fistName:'PARVEZ'},},);
